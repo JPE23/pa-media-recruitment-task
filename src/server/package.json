@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "mocha test --timeout 10000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lokijs": "^1.5.12"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "helmet": "^4.6.0",
+    "pactum": "^3.0.21"
+  }
+}
