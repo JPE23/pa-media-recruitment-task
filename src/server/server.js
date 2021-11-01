@@ -14,6 +14,7 @@ const express = require("express");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUI = require("swagger-ui-express");
 const helmet = require('helmet');
+const bcrypt = require("bcrypt");
 const db = database;
 
 
@@ -112,15 +113,18 @@ app.post('/user-profile-registration', (req, res) => {
         gender,
         password,
     } = req.body;
-    users.insert({
-        first_name: firstName,
-        last_name: lastName,
-        email_add: emailAdd,
-        country_of_residence: countryOfResidence,
-        gender: gender,
-        password: password,
+    const saltRounds = 10;
+    bcrypt.hash(password, saltRounds, function (err, hash) {
+        users.insert({
+            first_name: firstName,
+            last_name: lastName,
+            email_add: emailAdd,
+            country_of_residence: countryOfResidence,
+            gender: gender,
+            password: hash,
+        });
+        return res.json({msg: "user registered"})
     });
-    return res.json({msg: "user registered"})
 });
 
 /**

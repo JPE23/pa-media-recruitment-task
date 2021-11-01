@@ -31,6 +31,7 @@
   - `NodeJS`
   - `ExpressJS`
   - `LokiJS`
+  - `Bcrypt`
   - `Pactum`
   - `Mocha`
   - `React-Testing-Library`
