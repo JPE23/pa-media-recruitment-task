@@ -8,11 +8,18 @@
     email address and the new desired email address
   - Allows users to be **deleted** via their email address
 ####
-  - **Familiar Skills**
-    - Prior to this exercise, I was familiar with `ReactJS`, `NodeJS`, 
-      `ExpressJS`, `Git` and `Mocha`.
+- **Main files I worked on**
+  - `server.js`
+  - `App.js`
+  - `database.js`
+  - `server-test-suite.js`
+  - `App.test.js`
 ####
-  - **New skills/tools used**
+  - **Familiar tools used**
+    - Prior to this exercise, I was familiar with `ReactJS`, `NodeJS`, 
+    `ExpressJS`, `Git`, `Bcrypt` and `Mocha`.
+####
+  - **New tools used**
     - I was not familiar with in-memory databases, having previously worked with 
       regular disk based databases in `PostgreSQL`.
     - I was unfamiliar with `Pactum` which I used for unit testing
@@ -21,10 +28,10 @@
   - **Implementation**
     - For the in-memory database I used `LokiJS`. I had considered using 
       `better-SQLite3`, but the documentation was not immediately clear and, given the time 
-      constraints, I just needed something that worked quickly. In the long term,
-      I think this was a wiser decision for me, since I am already familiar with 
-      SQL based databases, and I have now added knowledge of another tool to my 
-      skillset.
+      constraints, I just needed something that worked quickly. 
+    - In the long term, I think this was a wiser decision for me, since I am 
+      already familiar with SQL based databases, and I have now added 
+      knowledge of another db tool/option to my skillset.
 ####
 - Tech used: 
   - `ReactJS`
@@ -41,9 +48,9 @@
 ####
 - Commands
   - `docker-compose run app`
-  - `npm start`
-  - `npm test`
-
+  - `npm start` (client and server side)
+  - `npm test` (client and server side)
+ 
 ####
 - Ports/URLs
   - `localhost:3000`
